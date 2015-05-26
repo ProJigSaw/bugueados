@@ -1,0 +1,2 @@
+# bugueados
+Antimonopolio

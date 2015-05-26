@@ -1,0 +1,160 @@
+body
+{
+   background-color: #F5F5F5;
+   margin: 0;
+   padding: 2px;
+}
+p
+{
+   font-size: 16px;
+   font-family: Arial;
+   font-weight: normal;
+   text-decoration: none;
+   color: #000000;
+}
+th
+{
+   font-size: 16px;
+   font-family: Arial;
+   font-weight: normal;
+   text-decoration: none;
+   background-color: #00C6F0;
+   color: #2D2D2D;
+   text-align: left;
+}
+td
+{
+   font-size: 16px;
+   font-family: Arial;
+   font-weight: normal;
+   text-decoration: none;
+   color: #000000;
+   vertical-align: top;
+}
+a, a:hover, a:visited
+{
+   color: #000000;
+}
+input, select, textarea
+{
+   font-size: 16px;
+   font-family: Arial;
+   font-weight: normal;
+   text-decoration: none;
+   color: #000000;
+   border:1px #00C6F0 solid;
+}
+#nav
+{
+   background-color: #00C6F0;
+   float: left;
+   list-style-type: none;
+   margin: 0 0 6px 0;
+   padding: 0;
+   width: 100%;
+}
+#nav li
+{
+   float: left;
+   position: relative;
+}
+#nav a
+{
+   display: block;
+   background-color: #00C6F0;
+   color: #2D2D2D;
+   font-size: 16px;
+   font-family: Arial;
+   text-decoration: none;
+   padding: 6px 6px 6px 6px;
+}
+#nav a:hover
+{
+   background-color: #2D2D2D;
+   color: #00C6F0;
+}
+#nav ul
+{
+   margin: 0;
+   padding: 0;
+   background: transparent;
+   list-style: none;
+   position: absolute;
+   left: -9999px;
+}
+#nav ul li
+{
+   float: none;
+}
+#nav ul a
+{
+   white-space: nowrap;
+}
+#nav li:hover ul
+{
+   left: 0;
+}
+#nav li:hover a
+{
+   background-color: #2D2D2D;
+   color: #00C6F0;
+}
+#nav li:hover ul a
+{
+   text-decoration: none;
+   background-color: #00C6F0;
+   color: #2D2D2D;
+}
+#nav li:hover ul li a:hover
+{ 
+   background-color: #2D2D2D;
+   color: #00C6F0;
+}
+.tabs
+{
+   font-size: 16px;
+   font-family: Arial;
+   width: 100%;
+   padding: 0;
+   margin: 0;
+}
+.tabs li
+{
+   list-style: none;
+   display: inline;
+   padding: 0;
+   margin: 0;
+}
+.tabs a
+{
+   padding: 4px 10px;
+   display: inline-block;
+   background-color: #00C6F0;
+   color: #2D2D2D;
+   text-decoration: none;
+   border-top-left-radius: 4px;
+   border-top-right-radius: 4px;
+   border-style: solid;
+   border-color: #666;
+   border-width: 1px;
+   border-bottom-width: 0;
+   margin-bottom: -1px;
+}
+.tabs a:focus
+{
+   outline: 0;
+}
+.tabs a.active
+{
+   background-color: #F5F5F5;
+   border-color: #00C6F0;
+   color: #00C6F0;
+}
+.tab
+{
+   border-style: solid;
+   border-color: #00C6F0;
+   border-width: 1px;
+   background-color: #F5F5F5;
+   padding: 4px;
+}

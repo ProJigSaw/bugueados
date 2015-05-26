@@ -1,0 +1,28 @@
+// search index for WYSIWYG Web Builder
+var database_length = 0;
+
+function SearchPage(url, title, keywords, description)
+{
+   this.url = url;
+   this.title = title;
+   this.keywords = keywords;
+   this.description = description;
+   return this;
+}
+
+function SearchDatabase()
+{
+   database_length = 0;
+   this[database_length++] = new SearchPage("http://www.bugueados.com/index.php", "Inicio", "inicio empresasregistradas compartido enredes sociales usuariosonline bugueados de compra venta herramientas laminas más información ultimas empresas registradas contactanos director com en todos nuestros helados fines semana www ultimos cupones creados publicidad aleatoria bienvenido registrarse iniciar nbsp sesion tan solo méxico las pymes han logrado alcanzar hasta el ofertas empleo una razón para apoyar antimonopolio ", "");
+   this[database_length++] = new SearchPage("http://www.bugueados.com/CrearCuenta.php", "Inicio", "inicio crear cuenta bugueados nombre completo usuario contraseña confirmar mail nbsp al tu aceptas los terminos condiciones de contactanos director com mi publicidad aleatoria bienvenido ", "");
+   this[database_length++] = new SearchPage("http://www.bugueados.com/Exito.php", "Inicio", "inicio redireccionando espere espera un momento bugueados de contactanos director com mi nbsp cuenta publicidad aleatoria bienvenido ", "");
+   this[database_length++] = new SearchPage("http://www.bugueados.com/Error.php", "Inicio", "inicio redireccionando espere un momento lo sentimos intente más tarde bugueados de contactanos director com mi nbsp cuenta publicidad aleatoria bienvenido ", "");
+   this[database_length++] = new SearchPage("http://www.bugueados.com/CMS.php", "Inicio", "inicio bugueados de contactanos director com mi nbsp cuenta publicidad aleatoria bienvenido ", "");
+   this[database_length++] = new SearchPage("http://www.bugueados.com/Buscar.php", "Inicio", "inicio bugueados de en todos nuestros helados fines semana www com filtros busqueda estoy buscando materia prima minerales país méxico ciudad estado guadalajara cupones disponibles calificaciones positivas buscar mi nbsp cuenta registrarse publicidad aleatoria bienvenido ", "");
+   this[database_length++] = new SearchPage("http://www.bugueados.com/página1.php", "Inicio", "inicio empresasregistradas compartido enredes sociales usuariosonline en todos nuestros helados fines de semana www bugueados com ultimas cupones creados empresas registradas compra venta herramientas laminas más información un solo pago tu empresa anunciate por vida encuentra mejores proveedores servicios productos los locales internacionales mi nbsp cuenta registrarse tan méxico las pymes han logrado alcanzar hasta el ofertas empleo una razón para apoyar antimonopolio ", "");
+   this[database_length++] = new SearchPage("http://www.bugueados.com/Mi_cuenta.php", "Página sin título", "página sin título logotipo agregar modificar mi cuenta datos personales bugueados de gdl el zapote tajín zapopan jalisco facebook twitter web nombre razón social télefono whatsapp dirección calle colonia redes sociales descripción la empresa con más años comprobables en mercado nuestro calzado deportivo ha demostrado ser lider calidad rendimiento diseño juvenil misión dar mejor atención al cliente usando tecnicas directas venta mediante uso telefono directa para atender hasta ultima solicitud cada lograr nacional creando una red mercadeo mayoristas minoristas visión usuario lopezmendez23 puntuación mis bugs mensajes nbsp sr ver compra zapatos precios por mayor op célular pérfil completado publicidad aleatoria registrarse bienvenido ", "");
+   this[database_length++] = new SearchPage("http://www.bugueados.com/Mi_puntuacion.php", "Página sin título", "página sin título logotipo agregar modificar mi cuenta puntuación usuario lopezmendez23 aquí podras ver todas tus estadisticas desde quien te ha felicitado por excelentes servicios tu nivel de impacto en contra la competencia antiguedad comenzo el dia jueves del bronce es personas han calificado tienes un total puntuaciones bandeja entrada tiene preguntas calificación positivos negativos tenis express excelente servicio hecho mismo que office depot bestbuy pero más economico escrito ultimos mensajes recibidos comentarios pymes empresa nbsp ultimas hernesto guerrero contactar datos personales mis bugs publicidad aleatoria registrarse bienvenido ", "");
+   this[database_length++] = new SearchPage("http://www.bugueados.com/Mis_Bugs.php", "Página sin título", "página sin título logotipo agregar modificar mi cuenta puntuación usuario lopezmendez23 aquí podras ver todas los cupones activos asi como pendientes de autorización realizar la compra extra eliminar editar bugueados en todos nuestros helados fines semana www com se requiere año antiguedad calificaciones positivas empresa nbsp ultimas puntuaciones hernesto guerrero excelente servicio hecho el mismo que office depot bestbuy pero más economico contactar datos personales mis bugs mensajes publicidad aleatoria registrarse bienvenido ", "");
+   this[database_length++] = new SearchPage("http://www.bugueados.com/Mensajes.php", "Página sin título", "página sin título logotipo agregar modificar mi cuenta mensajes usuario lopezmendez23 prospectos clientes proveedores cotización urgente hola vi sus productos me gustaria adquirir un par de ellos saber cuando sale con envio may redactar empresa ultimas puntuaciones hernesto guerrero excelente servicio hecho el mismo que en office depot bestbuy pero más economico contactar ver datos personales puntuación mis bugs publicidad aleatoria registrarse bienvenido ", "");
+   return this;
+}

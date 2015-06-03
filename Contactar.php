@@ -574,11 +574,10 @@ $(document).ready(function()
 <input type="number" id="Editbox5" style="position:absolute;left:390px;top:60px;width:198px;height:38px;line-height:38px;z-index:28;" name="Nombre" value="">
 </form>
 </div>
-<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb10.png" alt="WYSIWYG Web Builder" style="position:absolute;left:581px;top:747px;border-width:0;z-index:250"></a>
-<div id="wb_Text20" style="position:absolute;left:380px;top:110px;width:482px;height:40px;text-align:center;z-index:52;">
+<div id="wb_Text20" style="position:absolute;left:380px;top:110px;width:482px;height:40px;text-align:center;z-index:51;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:35px;">CONTACTAR</span></div>
 </div>
-<div id="Layer2" style="position:absolute;text-align:center;left:0px;top:690px;width:100%;height:90px;z-index:53;">
+<div id="Layer2" style="position:absolute;text-align:center;left:0px;top:690px;width:100%;height:90px;z-index:52;">
 <div id="Layer2_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="Layer11" style="position:absolute;text-align:left;left:1050px;top:10px;width:188px;height:68px;z-index:30;">
 </div>
@@ -606,7 +605,7 @@ $(document).ready(function()
 <span style="color:#5A5A5A;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.<br>registros@buguedos.com<br>El tajín #1658 - Zapopan</span></div>
 </div>
 </div>
-<div id="Layer4" style="position:fixed;text-align:center;left:0;top:0;right:0;height:70px;z-index:54;">
+<div id="Layer4" style="position:fixed;text-align:center;left:0;top:0;right:0;height:70px;z-index:53;">
 <div id="Layer4_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Image12" style="position:absolute;left:30px;top:20px;width:70px;height:44px;z-index:42;">
 <a href="./index.php"><img src="images/bugspeq.png" id="Image12" alt=""></a></div>

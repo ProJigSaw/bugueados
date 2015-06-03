@@ -20,8 +20,10 @@ div#container
 body
 {
    background-color: #FFFFFF;
-   background-image: url(images/Mi_cuenta_bkgrnd.png);
-   background-repeat: repeat-x;
+   background-image: url(images/noisy_net.png);
+   background-attachment: fixed;
+   background-position: center center;
+   background-repeat: repeat;
    color: #000000;
    font-family: Arial;
    font-size: 8px;
@@ -974,10 +976,6 @@ body
 {
    text-align: center;
 }
-#Layer19
-{
-   background-color: #004655;
-}
 #Image12
 {
    border: 0px #000000 solid;
@@ -1088,66 +1086,6 @@ body
 {
    text-align: center;
 }
-#wb_CssMenu2
-{
-   border: 0px #C0C0C0 solid;
-   background-color: transparent;
-}
-#wb_CssMenu2 ul
-{
-   list-style-type: none;
-   margin: 0;
-   padding: 0;
-}
-#wb_CssMenu2 li
-{
-   float: left;
-   margin: 0;
-   padding: 0px 0px 0px 0px;
-   width: 100px;
-}
-#wb_CssMenu2 a
-{
-   display: block;
-   float: left;
-   color: #FFFFFF;
-   border: 0px #007C97 solid;
-   background-color: #002A33;
-   background-image: none;
-   font-family: "Trebuchet MS";
-   font-size: 13px;
-   font-weight: normal;
-   font-style: normal;
-   text-decoration: none;
-   width: 90px;
-   height: 30px;
-   padding: 0px 5px 0px 5px;
-   vertical-align: middle;
-   line-height: 30px;
-   text-align: center;
-}
-#wb_CssMenu2 li:hover a, #wb_CssMenu2 a:hover
-{
-   color: #FFFFFF;
-   background-color: #00596C;
-   background-image: none;
-   border: 0px #007C97 solid;
-}
-#wb_CssMenu2 li.firstmain
-{
-   padding-left: 0px;
-}
-#wb_CssMenu2 li.lastmain
-{
-   padding-right: 0px;
-}
-#wb_CssMenu2 br
-{
-   clear: both;
-   font-size: 1px;
-   height: 0;
-   line-height: 0;
-}
 #LoginName1
 {
    color: #0097B7;
@@ -1214,4 +1152,8 @@ body
    font-size: 1px;
    height: 0;
    line-height: 0;
+}
+#Layer19
+{
+   background-color: #004655;
 }

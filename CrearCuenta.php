@@ -201,7 +201,7 @@ $(document).ready(function()
 </table>
 </form>
 </div>
-<div id="wb_Text1" style="position:absolute;left:440px;top:520px;width:370px;height:40px;text-align:center;z-index:21;">
+<div id="wb_Text1" style="position:absolute;left:440px;top:570px;width:370px;height:40px;text-align:center;z-index:21;">
 <span style="color:#878787;font-family:'Bookman Old Style';font-size:16px;">Al crear tu cuenta aceptas los </span><span style="color:#008CAA;font-family:'Bookman Old Style';font-size:16px;">terminos y condiciones</span><span style="color:#878787;font-family:'Bookman Old Style';font-size:16px;"> de Bugueados S.A. de C.V.</span></div>
 <div id="wb_Text6" style="position:absolute;left:380px;top:110px;width:482px;height:40px;text-align:center;z-index:22;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:35px;">CREAR CUENTA</span></div>

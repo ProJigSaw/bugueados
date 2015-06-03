@@ -1,6 +1,0 @@
-# bugueados
-Antimonopolio
-
-
-
-Hi woman

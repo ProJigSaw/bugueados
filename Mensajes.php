@@ -33,99 +33,6 @@ if (session_id() == "")
 <script src="jquery.ui.effect-scale.min.js"></script>
 <script src="jquery.ui.effect-shake.min.js"></script>
 <script src="jquery.ui.effect-slide.min.js"></script>
-<script src="./searchindex.js"></script>
-<script>
-var features = 'toolbar=no,menubar=no,location=no,scrollbars=yes,resizable=yes,status=no,left=,top=,width=,height=';
-var searchDatabase = new SearchDatabase();
-var searchResults_length = 0;
-var searchResults = new Object();
-function searchPage(features)
-{
-   var element = document.getElementById('SiteSearch1');
-   if (element.value.length != 0 || element.value != " ")
-   {
-      var value = unescape(element.value);
-      var keywords = value.split(" ");
-      searchResults_length = 0;
-      for (var i=0; i<database_length; i++)
-      {
-         var matches = 0;
-         var words = searchDatabase[i].title + " " + searchDatabase[i].description + " " + searchDatabase[i].keywords;
-         for (var j = 0; j < keywords.length; j++)
-         {
-            var pattern = new RegExp(keywords[j], "i");
-            var result = words.search(pattern);
-            if (result >= 0)
-            {
-               matches++;
-            }
-            else
-            {
-               matches = 0;
-            }
-         }
-         if (matches == keywords.length)
-         {
-            searchResults[searchResults_length++] = searchDatabase[i];
-         }
-      }
-      var wndResults = window.open('about:blank', '', features);
-      setTimeout(function()
-      {
-         var results = '';
-         var html = '<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Search results<\/title><\/head>';
-         html = html + '<body style="background-color:#FFFFFF;margin:0;padding:2px 2px 2px 2px;">';
-         html = html + '<span style="font-family:Arial;font-size:13px;color:#000000">';
-         for (var n=0; n<searchResults_length; n++)
-         {
-            var page_keywords = searchResults[n].keywords;
-            results = results + '<strong><a style="color:#0000FF" target="_parent" href="'+searchResults[n].url+'">'+searchResults[n].title +'<\/a><\/strong><br>Keywords: ' + page_keywords +'<br><br>\n';
-         }
-         if (searchResults_length == 0)
-         {
-            results = 'No results';
-         }
-         else
-         {
-            html = html + searchResults_length;
-            html = html + ' result(s) found for search term: ';
-            html = html + value;
-            html = html + '<br><br>';
-         }
-         html = html + results;
-         html = html + '<\/span>';
-         html = html + '<\/body><\/html>';
-         wndResults.document.write(html);
-     },100);
-   }
-   return false;
-}
-function searchParseURL()
-{
-   var url = decodeURIComponent(window.location.href);
-   if (url.indexOf('?') > 0)
-   {
-      var terms = '';
-      var params = url.split('?');
-      var values = params[1].split('&');
-      for (var i=0;i<values.length;i++)
-      {
-         var param = values[i].split('=');
-         if (param[0] == 'q')
-         {
-            terms = unescape(param[1]);
-            break;
-         }
-      }
-      if (terms != '')
-      {
-         var element = document.getElementById('SiteSearch1');
-         element.value = terms;
-         searchPage('');
-      }
-   }
-}
-</script>
 <script src="wwb10.min.js"></script>
 <script>
 $(document).ready(function()
@@ -144,26 +51,46 @@ $(document).ready(function()
    $("#jQueryButton5").button();
    $("#jQueryButton6").button();
    $("#jQueryButton7").button();
-   searchParseURL();
+   $("#RollOver1 a").hover(function(e)
+   {
+      $(this).children("span").stop().fadeTo(500, 0);
+   }, function()
+   {
+      $(this).children("span").stop().fadeTo(500, 1);
+   });
+   $("#RollOver2 a").hover(function(e)
+   {
+      $(this).children("span").stop().fadeTo(500, 0);
+   }, function()
+   {
+      $(this).children("span").stop().fadeTo(500, 1);
+   });
+   $("#RollOver3 a").hover(function(e)
+   {
+      $(this).children("span").stop().fadeTo(500, 0);
+   }, function()
+   {
+      $(this).children("span").stop().fadeTo(500, 1);
+   });
 });
 </script>
 </head>
 <body>
 <div id="space"><br></div>
 <div id="container">
-<div id="Layer2" style="position:absolute;text-align:center;left:10px;top:160px;width:210px;height:190px;z-index:136;">
+<div id="Layer2" style="position:absolute;text-align:center;left:10px;top:130px;width:210px;height:190px;z-index:151;">
 <div id="Layer2_Container" style="width:210px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Text1" style="position:absolute;left:31px;top:129px;width:141px;height:16px;text-align:center;z-index:0;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">LOGOTIPO</span></div>
 <div id="wb_Text14" style="position:absolute;left:19px;top:9px;width:184px;height:16px;text-align:right;z-index:1;">
 <span style="color:#00C0C0;font-family:Arial;font-size:13px;">Agregar</span></div>
-<div id="wb_Text15" style="position:absolute;left:19px;top:169px;width:180px;height:16px;text-align:right;z-index:2;">
-<span style="color:#00C0C0;font-family:Arial;font-size:13px;">Modificar</span></div>
-<div id="wb_Image2" style="position:absolute;left:79px;top:69px;width:50px;height:50px;z-index:3;">
+<div id="wb_Image2" style="position:absolute;left:79px;top:69px;width:50px;height:50px;z-index:2;">
 <img src="images/Bugueadospeq.png" id="Image2" alt=""></div>
+<div id="wb_Text15" style="position:absolute;left:19px;top:169px;width:180px;height:16px;text-align:right;z-index:3;">
+<span style="color:#00C0C0;font-family:Arial;font-size:13px;">Modificar</span></div>
 </div>
 </div>
-<div id="Layer4" style="position:absolute;text-align:left;left:230px;top:160px;width:1018px;height:618px;z-index:137;">
+<div id="Layer4" style="position:absolute;text-align:left;left:230px;top:130px;width:1018px;height:618px;z-index:152;">
 <div id="wb_Text2" style="position:absolute;left:829px;top:9px;width:184px;height:16px;text-align:right;z-index:48;">
 <span style="color:#00A0C0;font-family:Arial;font-size:13px;">Modificar</span></div>
 <div id="wb_Text6" style="position:absolute;left:19px;top:19px;width:250px;height:18px;z-index:49;text-align:left;">
@@ -288,9 +215,9 @@ $(document).ready(function()
 <span style="color:#000000;font-family:'Courier New';font-size:16px;">1</span></div>
 </div>
 </div>
-<div id="wb_Text5" style="position:absolute;left:10px;top:128px;width:212px;height:16px;text-align:center;z-index:138;">
+<div id="wb_Text5" style="position:absolute;left:10px;top:110px;width:212px;height:16px;text-align:center;z-index:153;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">EMPRESA S.A. de C.V.</span></div>
-<div id="Layer6" style="position:absolute;text-align:center;left:10px;top:370px;width:210px;height:410px;z-index:139;">
+<div id="Layer6" style="position:absolute;text-align:center;left:10px;top:330px;width:210px;height:410px;z-index:154;">
 <div id="Layer6_Container" style="width:210px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Text4" style="position:absolute;left:9px;top:9px;width:190px;height:16px;text-align:center;z-index:59;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">ULTIMAS PUNTUACIONES</span></div>
@@ -310,13 +237,13 @@ $(document).ready(function()
 <div id="wb_Text24" style="position:absolute;left:119px;top:359px;width:83px;height:16px;text-align:right;z-index:68;">
 <span style="color:#006A6A;font-family:Arial;font-size:13px;">Contactar</span></div>
 <hr id="Line4" style="position:absolute;left:9px;top:379px;width:189px;height:2px;z-index:69;">
-<div id="wb_Text28" style="position:absolute;left:9px;top:389px;width:190px;height:16px;text-align:center;z-index:70;">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Ver más.</span></div>
-<div id="wb_Text19" style="position:absolute;left:9px;top:209px;width:190px;height:60px;z-index:71;text-align:left;">
+<div id="wb_Text19" style="position:absolute;left:9px;top:209px;width:190px;height:60px;z-index:70;text-align:left;">
 <span style="color:#00C0C0;font-family:Arial;font-size:12px;">Hernesto Guerrero: </span><span style="color:#808080;font-family:Arial;font-size:12px;">Excelente servicio, de hecho el mismo que en office depot o bestbuy pero más economico.</span></div>
+<div id="wb_Text28" style="position:absolute;left:9px;top:389px;width:190px;height:16px;text-align:center;z-index:71;">
+<span style="color:#000000;font-family:Arial;font-size:13px;">Ver más.</span></div>
 </div>
 </div>
-<div id="wb_TabMenu1" style="position:absolute;left:230px;top:120px;width:1018px;height:36px;z-index:140;overflow:hidden;">
+<div id="wb_TabMenu1" style="position:absolute;left:230px;top:90px;width:1018px;height:36px;z-index:155;overflow:hidden;">
 <ul id="TabMenu1">
 <li><a href="./Mi_cuenta.php">Datos personales</a></li>
 <li><a href="./Mi_puntuacion.php">Mi puntuación</a></li>
@@ -324,28 +251,67 @@ $(document).ready(function()
 <li><a href="./Mensajes.php" class="active">Mensajes</a></li>
 </ul>
 </div>
-<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb10.png" alt="WYSIWYG Web Builder" style="position:absolute;left:581px;top:907px;border-width:0;z-index:250"></a>
 </div>
-<div id="Layer5" style="position:absolute;text-align:center;left:0px;top:800px;width:100%;height:140px;z-index:142;">
-<div id="Layer5_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-</div>
-</div>
-<div id="Layer1" style="position:fixed;text-align:center;left:0;top:0;right:0;height:50px;z-index:143;">
+<div id="Layer1" style="position:absolute;text-align:center;left:0px;top:770px;width:100%;height:90px;z-index:156;">
 <div id="Layer1_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_Image12" style="position:absolute;left:10px;top:10px;width:50px;height:32px;filter:alpha(opacity=90);-moz-opacity:0.90;opacity:0.90;z-index:131;">
-<img src="images/img0023.png" id="Image12" alt=""></div>
-<div id="wb_Text94" style="position:absolute;left:70px;top:20px;width:130px;height:16px;z-index:132;text-align:left;">
+<div id="Layer3" style="position:absolute;text-align:left;left:1050px;top:10px;width:188px;height:68px;z-index:131;">
+</div>
+<div id="Layer5" style="position:absolute;text-align:left;left:650px;top:10px;width:278px;height:68px;z-index:132;">
+</div>
+<div id="Layer22" style="position:absolute;text-align:left;left:330px;top:10px;width:278px;height:68px;z-index:133;">
+</div>
+<div id="wb_Text3" style="position:absolute;left:710px;top:35px;width:220px;height:22px;text-align:center;z-index:134;">
+<span style="color:#5A5A5A;font-family:'Trebuchet MS';font-size:16px;">GDL: (33) 1955 3511</span></div>
+<div id="Layer23" style="position:absolute;text-align:left;left:10px;top:10px;width:278px;height:68px;z-index:135;">
+</div>
+<div id="wb_Text40" style="position:absolute;left:390px;top:35px;width:220px;height:22px;text-align:center;z-index:136;">
+<span style="color:#5A5A5A;font-family:'Trebuchet MS';font-size:16px;">facebook.com/bugueados</span></div>
+<div id="wb_ClipArt1" style="position:absolute;left:340px;top:20px;width:50px;height:50px;z-index:137;">
+<a href="https://www.facebook.com/Bugueados?ref=hl" target="_blank"><img class="hover" src="images/img0102_hover.png" alt="" style="border-width:0;width:50px;height:50px;"><span><img src="images/img0102.png" id="ClipArt1" alt="" style="width:50px;height:50px;"></span></a></div>
+<div id="wb_ClipArt2" style="position:absolute;left:20px;top:20px;width:50px;height:50px;z-index:138;">
+<a href="https://twitter.com/Bugueados" target="_blank"><img class="hover" src="images/img0103_hover.png" alt="" style="border-width:0;width:50px;height:50px;"><span><img src="images/img0103.png" id="ClipArt2" alt="" style="width:50px;height:50px;"></span></a></div>
+<div id="wb_Text41" style="position:absolute;left:70px;top:35px;width:220px;height:22px;text-align:center;z-index:139;">
+<span style="color:#5A5A5A;font-family:'Trebuchet MS';font-size:16px;">twitter.com/bugueados</span></div>
+<div id="wb_ClipArt10" style="position:absolute;left:660px;top:20px;width:50px;height:50px;z-index:140;">
+<a href=""><img class="hover" src="images/img0104_hover.png" alt="" style="border-width:0;width:50px;height:50px;"><span><img src="images/img0104.png" id="ClipArt10" alt="" style="width:50px;height:50px;"></span></a></div>
+<div id="wb_Image4" style="position:absolute;left:950px;top:0px;width:90px;height:90px;z-index:141;">
+<img src="images/z0codJk2.png" id="Image4" alt=""></div>
+<div id="wb_Text42" style="position:absolute;left:1050px;top:20px;width:190px;height:48px;text-align:center;z-index:142;">
+<span style="color:#5A5A5A;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.<br>registros@buguedos.com<br>El tajín #1658 - Zapopan</span></div>
+</div>
+</div>
+<div id="Layer24" style="position:fixed;text-align:center;left:0;top:0;right:0;height:70px;z-index:157;">
+<div id="Layer24_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Image12" style="position:absolute;left:30px;top:20px;width:70px;height:44px;z-index:143;">
+<a href="./index.php"><img src="images/bugspeq.png" id="Image12" alt=""></a></div>
+<div id="RollOver1" style="position:absolute;left:1110px;top:30px;overflow:hidden;width:30px;height:30px;z-index:144">
+<a href="./Mi_cuenta.php">
+<img class="hover" alt="" src="images/favoritos2.png">
+<span><img alt="" src="images/favoritos.png"></span>
+</a>
+</div>
+<div id="RollOver2" style="position:absolute;left:1160px;top:30px;overflow:hidden;width:30px;height:30px;z-index:145">
+<a href="./Mi_cuenta.php">
+<img class="hover" alt="" src="images/mensajes.png">
+<span><img alt="" src="images/mensajes2.png"></span>
+</a>
+</div>
+<div id="RollOver3" style="position:absolute;left:1210px;top:30px;overflow:hidden;width:30px;height:30px;z-index:146">
+<a href="./Mi_cuenta.php">
+<img class="hover" alt="" src="images/micuenta2.png">
+<span><img alt="" src="images/micuenta.png"></span>
+</a>
+</div>
+<div id="wb_Text43" style="position:absolute;left:0px;top:0px;width:130px;height:16px;text-align:center;z-index:147;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:13px;">Publicidad aleatoria</span></div>
-<form action="" name="SiteSearch1_form" id="SiteSearch1_form" accept-charset="UTF-8" onsubmit="return searchPage(features)">
-<input type="text" id="SiteSearch1" style="position:absolute;left:453px;top:4px;width:342px;height:37px;line-height:37px;z-index:133;" name="SiteSearch1" value="" placeholder="Ejemplo buscar: Zapatos en Jalisco - Abogado en Jalisco"></form>
-<div id="wb_CssMenu1" style="position:absolute;left:1136px;top:0px;width:114px;height:50px;z-index:134;">
+<div id="wb_CssMenu2" style="position:absolute;left:990px;top:30px;width:100px;height:30px;z-index:148;">
 <ul>
-<li class="firstmain"><a href="./CrearCuenta.php" target="_self">Registrarse</a>
+<li class="firstmain"><a href="./IniciarSesion.php" target="_self">Iniciar&nbsp;Sesi&#243;n</a>
 </li>
 </ul>
 <br>
 </div>
-<div id="wb_LoginName1" style="position:absolute;left:820px;top:20px;width:190px;height:16px;z-index:135;">
+<div id="wb_LoginName1" style="position:absolute;left:990px;top:10px;width:250px;height:18px;text-align:center;z-index:149;">
 <span id="LoginName1">Bienvenido <?php
 if (isset($_SESSION['username']))
 {
@@ -353,13 +319,20 @@ if (isset($_SESSION['username']))
 }
 else
 {
-   echo 'No has iniciado Sesión';
+   echo 'no has iniciado sesion';
 }
 ?>!</span></div>
+<div id="wb_CssMenu1" style="position:absolute;left:355px;top:10px;width:540px;height:50px;z-index:150;">
+<ul>
+<li class="firstmain"><a href="./Buscar.php" target="_self">Buscar</a>
+</li>
+<li><a href="./CrearCuenta.php" target="_self">Registrarse</a>
+</li>
+<li><a href="./Contactar.php" target="_self">Contactar</a>
+</li>
+</ul>
+<br>
 </div>
-</div>
-<div id="Layer3" style="position:absolute;text-align:center;left:0px;top:50px;width:100%;height:5px;z-index:144;">
-<div id="Layer3_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 </div>
 </div>
 </body>

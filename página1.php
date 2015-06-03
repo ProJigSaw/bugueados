@@ -110,34 +110,16 @@ $(document).ready(function()
 <body>
 <div id="space"><br></div>
 <div id="container">
-<div id="wb_Image2" style="position:absolute;left:482px;top:98px;width:279px;height:179px;filter:alpha(opacity=90);-moz-opacity:0.90;opacity:0.90;z-index:212;">
+<div id="wb_Image2" style="position:absolute;left:482px;top:98px;width:279px;height:179px;filter:alpha(opacity=90);-moz-opacity:0.90;opacity:0.90;z-index:211;">
 <img src="images/img0006.png" id="Image2" alt=""></div>
 <form action="" name="SiteSearch1_form" id="SiteSearch1_form" accept-charset="UTF-8" onsubmit="return searchPage(features)">
-<input type="text" id="SiteSearch1" style="position:absolute;left:440px;top:300px;width:368px;height:38px;line-height:38px;z-index:213;" name="SiteSearch1" value="" placeholder="Ejemplo buscar: Zapatos en Jalisco - Abogado en Jalisco"></form>
-<div id="wb_Shape2" style="position:absolute;left:260px;top:1570px;width:180px;height:150px;z-index:214;">
-<img src="images/img0013.png" id="Shape2" alt="" style="width:180px;height:150px;"></div>
-<div id="wb_Shape6" style="position:absolute;left:535px;top:1570px;width:180px;height:150px;z-index:215;">
-<img src="images/img0014.png" id="Shape6" alt="" style="width:180px;height:150px;"></div>
-<div id="wb_Shape7" style="position:absolute;left:770px;top:1570px;width:180px;height:150px;z-index:216;">
-<img src="images/img0015.png" id="Shape7" alt="" style="width:180px;height:150px;"></div>
-<div id="wb_Text5" style="position:absolute;left:535px;top:1600px;width:180px;height:36px;text-align:center;z-index:217;">
-<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Empresas<br>Registradas</span></div>
-<div id="wb_Text4" style="position:absolute;left:530px;top:1650px;width:180px;height:33px;text-align:center;z-index:218;">
-<span style="color:#FF3C1A;font-family:Arial;font-size:29px;">124,498</span></div>
-<div id="wb_Text2" style="position:absolute;left:260px;top:1600px;width:180px;height:36px;text-align:center;z-index:219;">
-<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Compartido en<br>redes sociales</span></div>
-<div id="wb_Text3" style="position:absolute;left:260px;top:1650px;width:180px;height:33px;text-align:center;z-index:220;">
-<span style="color:#FF3C1A;font-family:Arial;font-size:29px;">1,203.057</span></div>
-<div id="wb_Text7" style="position:absolute;left:770px;top:1600px;width:180px;height:36px;text-align:center;z-index:221;">
-<span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Usuarios<br>Online</span></div>
-<div id="wb_Text6" style="position:absolute;left:760px;top:1650px;width:180px;height:33px;text-align:center;z-index:222;">
-<span style="color:#FF3C1A;font-family:Arial;font-size:29px;">2,452</span></div>
+<input type="text" id="SiteSearch1" style="position:absolute;left:440px;top:300px;width:368px;height:38px;line-height:38px;z-index:212;" name="SiteSearch1" value="" placeholder="Ejemplo buscar: Zapatos en Jalisco - Abogado en Jalisco"></form>
 </div>
-<div id="Layer25" style="position:absolute;text-align:center;left:0px;top:380px;width:100%;height:246px;z-index:223;">
+<div id="Layer25" style="position:absolute;text-align:center;left:0px;top:380px;width:100%;height:246px;z-index:213;">
 <div id="Layer25_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 </div>
 </div>
-<div id="Layer7" style="position:absolute;text-align:center;left:0px;top:870px;width:100%;height:560px;z-index:224;">
+<div id="Layer7" style="position:absolute;text-align:center;left:0px;top:870px;width:100%;height:560px;z-index:214;">
 <div id="Layer7_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="Layer12" style="position:absolute;text-align:left;left:17px;top:50px;width:1215px;height:218px;z-index:67;">
 <div id="Layer6" style="position:absolute;text-align:left;left:12px;top:19px;width:190px;height:180px;z-index:20;">
@@ -283,11 +265,11 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Layer8" style="position:absolute;text-align:center;left:0px;top:626px;width:100%;height:244px;z-index:225;">
+<div id="Layer8" style="position:absolute;text-align:center;left:0px;top:626px;width:100%;height:244px;z-index:215;">
 <div id="Layer8_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 </div>
 </div>
-<div id="Layer9" style="position:absolute;text-align:center;left:0px;top:390px;width:100%;height:460px;z-index:226;">
+<div id="Layer9" style="position:absolute;text-align:center;left:0px;top:390px;width:100%;height:460px;z-index:216;">
 <div id="Layer9_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Shape3" style="position:absolute;left:425px;top:30px;width:400px;height:400px;z-index:71;">
 <img src="images/img0007.png" id="Shape3" alt="" style="width:400px;height:400px;"></div>
@@ -319,7 +301,7 @@ $(document).ready(function()
 <span style="color:#FFFFFF;font-family:Impact;font-size:16px;">productos</span></div>
 </div>
 </div>
-<div id="Layer3" style="position:absolute;text-align:center;left:0px;top:1730px;width:100%;height:710px;z-index:227;">
+<div id="Layer3" style="position:absolute;text-align:center;left:0px;top:1730px;width:100%;height:710px;z-index:217;">
 <div id="Layer3_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Text11" style="position:absolute;left:15px;top:290px;width:1220px;height:90px;text-align:center;z-index:85;">
 <span style="color:#FFFFFF;font-family:'Arial Black';font-size:64px;">ENCUENTRA LOS MEJORES </span></div>
@@ -333,7 +315,7 @@ $(document).ready(function()
 <span style="color:#002B33;font-family:Impact;font-size:35px;">de empresas locales e internacionales</span></div>
 </div>
 </div>
-<div id="Layer4" style="position:fixed;text-align:center;left:0;top:0;right:0;height:50px;z-index:228;">
+<div id="Layer4" style="position:fixed;text-align:center;left:0;top:0;right:0;height:50px;z-index:218;">
 <div id="Layer4_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_CssMenu2" style="position:absolute;left:960px;top:0px;width:285px;height:50px;z-index:90;">
 <ul>
@@ -348,11 +330,11 @@ $(document).ready(function()
 <img src="images/img0012.png" id="Image12" alt=""></div>
 </div>
 </div>
-<div id="Layer2" style="position:absolute;text-align:center;left:0px;top:50px;width:100%;height:5px;z-index:229;">
+<div id="Layer2" style="position:absolute;text-align:center;left:0px;top:50px;width:100%;height:5px;z-index:219;">
 <div id="Layer2_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 </div>
 </div>
-<div id="Layer10" style="position:absolute;text-align:center;left:0px;top:1430px;width:100%;height:130px;z-index:230;">
+<div id="Layer10" style="position:absolute;text-align:center;left:0px;top:1430px;width:100%;height:130px;z-index:220;">
 <div id="Layer10_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="wb_Text28" style="position:absolute;left:257px;top:50px;width:737px;height:18px;text-align:center;z-index:209;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:16px;">Tan solo en México, las PYMES han logrado alcanzar hasta el 81% de las ofertas de empleo.</span></div>
@@ -360,14 +342,8 @@ $(document).ready(function()
 <span style="color:#0099B9;font-family:Arial;font-size:13px;">Una razón más para apoyar el antimonopolio.</span></div>
 </div>
 </div>
-<div id="Layer1" style="position:absolute;text-align:center;left:0px;top:1560px;width:100%;height:20px;z-index:231;">
-<div id="Layer1_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-</div>
-</div>
-<div id="Layer5" style="position:absolute;text-align:center;left:0px;top:2440px;width:100%;height:244px;z-index:232;">
+<div id="Layer5" style="position:absolute;text-align:center;left:0px;top:2440px;width:100%;height:244px;z-index:221;">
 <div id="Layer5_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_Image7" style="position:absolute;left:577px;top:148px;width:96px;height:96px;z-index:211;">
-<img src="images/eddy.png" id="Image7" alt=""></div>
 </div>
 </div>
 </body>

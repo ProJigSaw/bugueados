@@ -18,189 +18,145 @@ if (session_id() == "")
 $(document).ready(function()
 {
    $("#Layer1").stickylayer({orientation: 8, position: [0, 0], delay: 500});
+   $("#RollOver1 a").hover(function(e)
+   {
+      $(this).children("span").stop().fadeTo(500, 0);
+   }, function()
+   {
+      $(this).children("span").stop().fadeTo(500, 1);
+   });
+   $("#RollOver2 a").hover(function(e)
+   {
+      $(this).children("span").stop().fadeTo(500, 0);
+   }, function()
+   {
+      $(this).children("span").stop().fadeTo(500, 1);
+   });
+   $("#RollOver3 a").hover(function(e)
+   {
+      $(this).children("span").stop().fadeTo(500, 0);
+   }, function()
+   {
+      $(this).children("span").stop().fadeTo(500, 1);
+   });
 });
 </script>
 </head>
 <body>
 <div id="space"><br></div>
 <div id="container">
-<div id="Layer8" style="position:absolute;text-align:left;left:620px;top:80px;width:288px;height:118px;z-index:116;">
-<div id="wb_Image1" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:46;">
+<div id="Layer8" style="position:absolute;text-align:left;left:620px;top:80px;width:288px;height:118px;z-index:107;">
+<div id="wb_Image1" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:42;">
 <img src="images/qrplanet%20%281%29.png" id="Image1" alt=""></div>
-<div id="wb_Text8" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:47;">
+<div id="wb_Text8" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:43;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text9" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:48;">
+<div id="wb_Text9" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:44;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text12" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:49;">
+<div id="wb_Text12" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:45;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
 </div>
-<div id="Layer9" style="position:absolute;text-align:left;left:260px;top:70px;width:288px;height:118px;z-index:117;">
-<div id="wb_Image2" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:50;">
-<img src="images/qrplanet%20%281%29.png" id="Image2" alt=""></div>
-</div>
-<div id="Layer10" style="position:absolute;text-align:left;left:960px;top:80px;width:288px;height:118px;z-index:118;">
-<div id="wb_Text14" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:51;">
+<div id="Layer10" style="position:absolute;text-align:left;left:960px;top:80px;width:288px;height:118px;z-index:108;">
+<div id="wb_Text14" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:46;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text15" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:52;">
+<div id="wb_Text15" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:47;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text16" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:53;">
+<div id="wb_Text16" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:48;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
-<div id="wb_Image3" style="position:absolute;left:9px;top:9px;width:99px;height:99px;z-index:54;">
+<div id="wb_Image3" style="position:absolute;left:9px;top:9px;width:99px;height:99px;z-index:49;">
 <img src="images/qrplanet%20%281%29.png" id="Image3" alt=""></div>
 </div>
-<div id="Layer11" style="position:absolute;text-align:left;left:620px;top:210px;width:288px;height:118px;z-index:119;">
-<div id="wb_Image4" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:55;">
+<div id="Layer11" style="position:absolute;text-align:left;left:620px;top:210px;width:288px;height:118px;z-index:109;">
+<div id="wb_Image4" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:50;">
 <img src="images/qrplanet%20%281%29.png" id="Image4" alt=""></div>
-<div id="wb_Text17" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:56;">
+<div id="wb_Text17" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:51;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text18" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:57;">
+<div id="wb_Text18" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:52;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text19" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:58;">
+<div id="wb_Text19" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:53;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
 </div>
-<div id="Layer12" style="position:absolute;text-align:left;left:280px;top:210px;width:288px;height:118px;z-index:120;">
-<div id="wb_Image5" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:59;">
+<div id="Layer12" style="position:absolute;text-align:left;left:280px;top:210px;width:288px;height:118px;z-index:110;">
+<div id="wb_Image5" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:54;">
 <img src="images/qrplanet%20%281%29.png" id="Image5" alt=""></div>
-<div id="wb_Text20" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:60;">
+<div id="wb_Text20" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:55;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text21" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:61;">
+<div id="wb_Text21" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:56;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text22" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:62;">
+<div id="wb_Text22" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:57;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
 </div>
-<div id="Layer13" style="position:absolute;text-align:left;left:960px;top:210px;width:288px;height:118px;z-index:121;">
-<div id="wb_Text23" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:63;">
+<div id="Layer13" style="position:absolute;text-align:left;left:960px;top:210px;width:288px;height:118px;z-index:111;">
+<div id="wb_Text23" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:58;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text24" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:64;">
+<div id="wb_Text24" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:59;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text25" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:65;">
+<div id="wb_Text25" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:60;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
-<div id="wb_Image6" style="position:absolute;left:9px;top:9px;width:99px;height:99px;z-index:66;">
+<div id="wb_Image6" style="position:absolute;left:9px;top:9px;width:99px;height:99px;z-index:61;">
 <img src="images/qrplanet%20%281%29.png" id="Image6" alt=""></div>
 </div>
-<div id="Layer14" style="position:absolute;text-align:left;left:620px;top:340px;width:288px;height:118px;z-index:122;">
-<div id="wb_Image7" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:67;">
+<div id="Layer14" style="position:absolute;text-align:left;left:620px;top:340px;width:288px;height:118px;z-index:112;">
+<div id="wb_Image7" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:62;">
 <img src="images/qrplanet%20%281%29.png" id="Image7" alt=""></div>
-<div id="wb_Text26" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:68;">
+<div id="wb_Text26" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:63;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text27" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:69;">
+<div id="wb_Text27" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:64;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text28" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:70;">
+<div id="wb_Text28" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:65;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
 </div>
-<div id="Layer15" style="position:absolute;text-align:left;left:280px;top:340px;width:288px;height:118px;z-index:123;">
-<div id="wb_Image8" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:71;">
+<div id="Layer15" style="position:absolute;text-align:left;left:280px;top:340px;width:288px;height:118px;z-index:113;">
+<div id="wb_Image8" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:66;">
 <img src="images/qrplanet%20%281%29.png" id="Image8" alt=""></div>
-<div id="wb_Text29" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:72;">
+<div id="wb_Text29" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:67;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text30" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:73;">
+<div id="wb_Text30" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:68;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text31" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:74;">
+<div id="wb_Text31" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:69;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
 </div>
-<div id="Layer16" style="position:absolute;text-align:left;left:960px;top:340px;width:288px;height:118px;z-index:124;">
-<div id="wb_Text32" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:75;">
+<div id="Layer16" style="position:absolute;text-align:left;left:960px;top:340px;width:288px;height:118px;z-index:114;">
+<div id="wb_Text32" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:70;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text33" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:76;">
+<div id="wb_Text33" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:71;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text35" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:77;">
+<div id="wb_Text35" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:72;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
-<div id="wb_Image9" style="position:absolute;left:9px;top:9px;width:99px;height:99px;z-index:78;">
+<div id="wb_Image9" style="position:absolute;left:9px;top:9px;width:99px;height:99px;z-index:73;">
 <img src="images/qrplanet%20%281%29.png" id="Image9" alt=""></div>
 </div>
-<div id="Layer17" style="position:absolute;text-align:left;left:620px;top:470px;width:288px;height:118px;z-index:125;">
-<div id="wb_Image10" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:79;">
+<div id="Layer17" style="position:absolute;text-align:left;left:620px;top:470px;width:288px;height:118px;z-index:115;">
+<div id="wb_Image10" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:74;">
 <img src="images/qrplanet%20%281%29.png" id="Image10" alt=""></div>
-<div id="wb_Text36" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:80;">
+<div id="wb_Text36" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:75;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text37" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:81;">
+<div id="wb_Text37" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:76;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text38" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:82;">
+<div id="wb_Text38" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:77;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
 </div>
-<div id="Layer18" style="position:absolute;text-align:left;left:280px;top:470px;width:288px;height:118px;z-index:126;">
-<div id="wb_Image11" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:83;">
+<div id="Layer18" style="position:absolute;text-align:left;left:280px;top:470px;width:288px;height:118px;z-index:116;">
+<div id="wb_Image11" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:78;">
 <img src="images/qrplanet%20%281%29.png" id="Image11" alt=""></div>
-<div id="wb_Text39" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:84;">
+<div id="wb_Text39" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:79;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text40" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:85;">
+<div id="wb_Text40" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:80;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text41" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:86;">
+<div id="wb_Text41" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:81;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
 </div>
-<div id="Layer19" style="position:absolute;text-align:left;left:960px;top:470px;width:288px;height:118px;z-index:127;">
-<div id="wb_Text42" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:87;">
+<div id="Layer19" style="position:absolute;text-align:left;left:960px;top:470px;width:288px;height:118px;z-index:117;">
+<div id="wb_Text42" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:82;">
 <span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text43" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:88;">
+<div id="wb_Text43" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:83;">
 <span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text44" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:89;">
+<div id="wb_Text44" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:84;">
 <span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
-<div id="wb_Image13" style="position:absolute;left:9px;top:9px;width:99px;height:99px;z-index:90;">
+<div id="wb_Image13" style="position:absolute;left:9px;top:9px;width:99px;height:99px;z-index:85;">
 <img src="images/qrplanet%20%281%29.png" id="Image13" alt=""></div>
 </div>
-<div id="Layer20" style="position:absolute;text-align:left;left:620px;top:600px;width:288px;height:118px;z-index:128;">
-<div id="wb_Image14" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:91;">
-<img src="images/qrplanet%20%281%29.png" id="Image14" alt=""></div>
-<div id="wb_Text45" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:92;">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text46" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:93;">
-<span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text47" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:94;">
-<span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
 </div>
-<div id="Layer21" style="position:absolute;text-align:left;left:280px;top:600px;width:288px;height:118px;z-index:129;">
-<div id="wb_Image15" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:95;">
-<img src="images/qrplanet%20%281%29.png" id="Image15" alt=""></div>
-<div id="wb_Text48" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:96;">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text49" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:97;">
-<span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text50" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:98;">
-<span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
-</div>
-<div id="Layer22" style="position:absolute;text-align:left;left:960px;top:600px;width:288px;height:118px;z-index:130;">
-<div id="wb_Text51" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:99;">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text52" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:100;">
-<span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text53" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:101;">
-<span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
-<div id="wb_Image16" style="position:absolute;left:9px;top:9px;width:99px;height:99px;z-index:102;">
-<img src="images/qrplanet%20%281%29.png" id="Image16" alt=""></div>
-</div>
-<div id="Layer23" style="position:absolute;text-align:left;left:620px;top:730px;width:288px;height:118px;z-index:131;">
-<div id="wb_Image17" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:103;">
-<img src="images/qrplanet%20%281%29.png" id="Image17" alt=""></div>
-<div id="wb_Text54" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:104;">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text55" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:105;">
-<span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text56" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:106;">
-<span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
-</div>
-<div id="Layer24" style="position:absolute;text-align:left;left:280px;top:730px;width:288px;height:118px;z-index:132;">
-<div id="wb_Image18" style="position:absolute;left:4px;top:11px;width:99px;height:99px;z-index:107;">
-<img src="images/qrplanet%20%281%29.png" id="Image18" alt=""></div>
-<div id="wb_Text57" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:108;">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text58" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:109;">
-<span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text59" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:110;">
-<span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
-</div>
-<div id="Layer25" style="position:absolute;text-align:left;left:960px;top:730px;width:288px;height:118px;z-index:133;">
-<div id="wb_Text60" style="position:absolute;left:109px;top:11px;width:176px;height:16px;text-align:center;z-index:111;">
-<span style="color:#000000;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.</span></div>
-<div id="wb_Text61" style="position:absolute;left:109px;top:41px;width:170px;height:32px;text-align:center;z-index:112;">
-<span style="color:#A9A9A9;font-family:Arial;font-size:13px;">2 X 1 En todos nuestros helados - Fines de semana</span></div>
-<div id="wb_Text62" style="position:absolute;left:109px;top:81px;width:172px;height:18px;text-align:center;z-index:113;">
-<span style="color:#696969;font-family:Arial;font-size:16px;">www.bugueados.com</span></div>
-<div id="wb_Image19" style="position:absolute;left:9px;top:9px;width:99px;height:99px;z-index:114;">
-<img src="images/qrplanet%20%281%29.png" id="Image19" alt=""></div>
-</div>
-<a href="http://www.wysiwygwebbuilder.com" target="_blank"><img src="images/builtwithwwb10.png" alt="WYSIWYG Web Builder" style="position:absolute;left:581px;top:817px;border-width:0;z-index:250"></a>
-</div>
-<div id="Layer1" style="position:absolute;text-align:center;left:0px;top:0px;width:250px;height:670px;z-index:135;">
+<div id="Layer1" style="position:absolute;text-align:center;left:0px;top:0px;width:250px;height:670px;z-index:118;">
 <div id="Layer1_Container" style="width:250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 <div id="Layer3" style="position:absolute;text-align:left;left:10px;top:70px;width:228px;height:578px;z-index:18;">
 <div id="wb_Text34" style="position:absolute;left:9px;top:19px;width:210px;height:18px;text-align:center;z-index:6;">
@@ -254,22 +210,66 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="Layer4" style="position:fixed;text-align:center;left:0;top:0;right:0;height:50px;z-index:136;">
-<div id="Layer4_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_CssMenu2" style="position:absolute;left:483px;top:0px;width:285px;height:50px;z-index:40;">
+<div id="Layer2" style="position:absolute;text-align:center;left:0px;top:690px;width:100%;height:90px;z-index:119;">
+<div id="Layer2_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="Layer4" style="position:absolute;text-align:left;left:1050px;top:10px;width:188px;height:68px;z-index:87;">
+</div>
+<div id="Layer9" style="position:absolute;text-align:left;left:650px;top:10px;width:278px;height:68px;z-index:88;">
+</div>
+<div id="Layer20" style="position:absolute;text-align:left;left:330px;top:10px;width:278px;height:68px;z-index:89;">
+</div>
+<div id="wb_Text7" style="position:absolute;left:710px;top:35px;width:220px;height:22px;text-align:center;z-index:90;">
+<span style="color:#5A5A5A;font-family:'Trebuchet MS';font-size:16px;">GDL: (33) 1955 3511</span></div>
+<div id="Layer21" style="position:absolute;text-align:left;left:10px;top:10px;width:278px;height:68px;z-index:91;">
+</div>
+<div id="wb_Text10" style="position:absolute;left:390px;top:35px;width:220px;height:22px;text-align:center;z-index:92;">
+<span style="color:#5A5A5A;font-family:'Trebuchet MS';font-size:16px;">facebook.com/bugueados</span></div>
+<div id="wb_ClipArt1" style="position:absolute;left:340px;top:20px;width:50px;height:50px;z-index:93;">
+<a href="https://www.facebook.com/Bugueados?ref=hl" target="_blank"><img class="hover" src="images/img0090_hover.png" alt="" style="border-width:0;width:50px;height:50px;"><span><img src="images/img0090.png" id="ClipArt1" alt="" style="width:50px;height:50px;"></span></a></div>
+<div id="wb_ClipArt2" style="position:absolute;left:20px;top:20px;width:50px;height:50px;z-index:94;">
+<a href="https://twitter.com/Bugueados" target="_blank"><img class="hover" src="images/img0091_hover.png" alt="" style="border-width:0;width:50px;height:50px;"><span><img src="images/img0091.png" id="ClipArt2" alt="" style="width:50px;height:50px;"></span></a></div>
+<div id="wb_Text13" style="position:absolute;left:70px;top:35px;width:220px;height:22px;text-align:center;z-index:95;">
+<span style="color:#5A5A5A;font-family:'Trebuchet MS';font-size:16px;">twitter.com/bugueados</span></div>
+<div id="wb_ClipArt4" style="position:absolute;left:660px;top:20px;width:50px;height:50px;z-index:96;">
+<a href=""><img class="hover" src="images/img0092_hover.png" alt="" style="border-width:0;width:50px;height:50px;"><span><img src="images/img0092.png" id="ClipArt4" alt="" style="width:50px;height:50px;"></span></a></div>
+<div id="wb_Image2" style="position:absolute;left:950px;top:0px;width:90px;height:90px;z-index:97;">
+<img src="images/z0codJk2.png" id="Image2" alt=""></div>
+<div id="wb_Text45" style="position:absolute;left:1050px;top:20px;width:190px;height:48px;text-align:center;z-index:98;">
+<span style="color:#5A5A5A;font-family:Arial;font-size:13px;">Bugueados S.A. de C.V.<br>registros@buguedos.com<br>El tajín #1658 - Zapopan</span></div>
+</div>
+</div>
+<div id="Layer22" style="position:fixed;text-align:center;left:0;top:0;right:0;height:70px;z-index:120;">
+<div id="Layer22_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
+<div id="wb_Image12" style="position:absolute;left:30px;top:20px;width:70px;height:44px;z-index:99;">
+<a href="./index.php"><img src="images/bugspeq.png" id="Image12" alt=""></a></div>
+<div id="RollOver1" style="position:absolute;left:1110px;top:30px;overflow:hidden;width:30px;height:30px;z-index:100">
+<a href="./Mi_cuenta.php">
+<img class="hover" alt="" src="images/favoritos2.png">
+<span><img alt="" src="images/favoritos.png"></span>
+</a>
+</div>
+<div id="RollOver2" style="position:absolute;left:1160px;top:30px;overflow:hidden;width:30px;height:30px;z-index:101">
+<a href="./Mi_cuenta.php">
+<img class="hover" alt="" src="images/mensajes.png">
+<span><img alt="" src="images/mensajes2.png"></span>
+</a>
+</div>
+<div id="RollOver3" style="position:absolute;left:1210px;top:30px;overflow:hidden;width:30px;height:30px;z-index:102">
+<a href="./Mi_cuenta.php">
+<img class="hover" alt="" src="images/micuenta2.png">
+<span><img alt="" src="images/micuenta.png"></span>
+</a>
+</div>
+<div id="wb_Text46" style="position:absolute;left:0px;top:0px;width:130px;height:16px;text-align:center;z-index:103;">
+<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">Publicidad aleatoria</span></div>
+<div id="wb_CssMenu2" style="position:absolute;left:990px;top:30px;width:100px;height:30px;z-index:104;">
 <ul>
-<li class="firstmain"><a href="./Mi_cuenta.php" target="_self">Mi&nbsp;cuenta</a>
-</li>
-<li><a href="#" target="_self">Registrarse</a>
+<li class="firstmain"><a href="./IniciarSesion.php" target="_self">Iniciar&nbsp;Sesi&#243;n</a>
 </li>
 </ul>
 <br>
 </div>
-<div id="wb_Image12" style="position:absolute;left:10px;top:10px;width:50px;height:32px;filter:alpha(opacity=90);-moz-opacity:0.90;opacity:0.90;z-index:41;">
-<img src="images/img0001.png" id="Image12" alt=""></div>
-<div id="wb_Text94" style="position:absolute;left:70px;top:20px;width:130px;height:16px;z-index:42;text-align:left;">
-<span style="color:#FFFFFF;font-family:Arial;font-size:13px;">Publicidad aleatoria</span></div>
-<div id="wb_LoginName1" style="position:absolute;left:1070px;top:20px;width:164px;height:16px;z-index:43;">
+<div id="wb_LoginName1" style="position:absolute;left:990px;top:10px;width:250px;height:18px;text-align:center;z-index:105;">
 <span id="LoginName1">Bienvenido <?php
 if (isset($_SESSION['username']))
 {
@@ -277,13 +277,20 @@ if (isset($_SESSION['username']))
 }
 else
 {
-   echo 'No has iniciado Sesión';
+   echo 'no has iniciado sesion';
 }
 ?>!</span></div>
+<div id="wb_CssMenu1" style="position:absolute;left:355px;top:10px;width:540px;height:50px;z-index:106;">
+<ul>
+<li class="firstmain"><a href="./Buscar.php" target="_self">Buscar</a>
+</li>
+<li><a href="./CrearCuenta.php" target="_self">Registrarse</a>
+</li>
+<li><a href="./Contactar.php" target="_self">Contactar</a>
+</li>
+</ul>
+<br>
 </div>
-</div>
-<div id="Layer2" style="position:absolute;text-align:center;left:0px;top:50px;width:100%;height:5px;z-index:137;">
-<div id="Layer2_Container" style="width:1250px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
 </div>
 </div>
 </body>
